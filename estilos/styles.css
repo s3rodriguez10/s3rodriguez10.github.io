@@ -15,7 +15,10 @@ body {
 .wrapper, portfolio{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(167, 164, 160);
+    background: #1a2a6c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     color: #fff;
     overflow-y: auto;
 }
@@ -177,8 +180,10 @@ h3 {
 }
 
 .container-slider {
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 24%, rgba(189,123,26,1) 71%, rgba(224,160,32,1) 100%);
+    background: #1a2a6c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     width: 100vw;
     height: 100vh;
     /*rgba(201, 125, 26, 0.781)*/
@@ -248,7 +253,11 @@ h3 {
     width: 300px;
     height: 400px;
     background-color: rgb(197, 136, 21);
-    margin: 1em;
+    margin: 2em;
+}
+
+.card:hover{
+    transform: scale(1.2);
 }
 
 .card_img{
